@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html  ng-app="mercadoMorgan">
+    <head>
+        <title>Morgan Market</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/app.css" rel="stylesheet"/>
+        <link href="css/bootstrap-theme.css" rel="stylesheet"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="lib/jquery-1.11.2.min.js"></script>
+        <!--[if lt IE 9]>   
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="content">
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#"><img src="images/banner.png" alt=""></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+                                <li><a href="login.html#/logout" title="Salida Segura"><span class="glyphicon glyphicon-off"></span></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            
+            <div class="content-body" >
+                <div class="ng-scope" ng-view=""></div>
+            </div>
+            <div class="content-footer">
+
+            </div>
+        </div>
+
+        <div class="modal fade espera-modal-sm in" id="dlgEspera" tabindex="-1" role="dialog" aria-labelledby="dlgConsulta" aria-hidden="false">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content"> 
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <image src="./images/cargando.GIF" alt="cargando" />
+                            </div>
+                            <div class="col-sm-1">
+                            </div>
+                            <div class="col-sm-8">
+                                Por favor espere mientras consultamos la información.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bs-example-modal-md in" id="dlgConsulta" tabindex="-1" role="dialog" aria-labelledby="dlgConsulta" aria-hidden="false">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="dlgConsulta">Resultado</h4>
+                    </div>
+                    <div class="modal-body">
+                        <span id="msgConsulta"> </span>  
+                        <hr />
+                        <div class="text-right">
+                            <button class="btn btn-primary" data-dismiss="modal" data-target=".bs-example-modal-md">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="./lib/angular.min.js"></script>
+        <script src="./lib/angular-route.min.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/controller.js"></script>
+        <script src="./lib/bootstrap.js"></script>
+        <script src="./lib/ui-bootstrap-tpls-0.12.0.min.js"></script>
+        <script src="./lib/moment-with-locales.min.js" type="text/javascript"></script>
+        <script src="./lib/bootstrap-datetimepicker.min.js"></script>
+        <script src="./lib/bootbox.min.js" type="text/javascript"></script>
+        <script src="./lib/bootstrap-confirmation.min.js"></script>
+        <script src="./lib/fileinput.min.js"></script>
+
+        <script src="./js/solicitudCtrl.js" type="text/javascript"></script>
+        
+    </body>
+</html>

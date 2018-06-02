@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+- This is a simple dozer mapping to copy one bean to another bean
+- In this case , both the beans have the same structure.
+-->
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+    
+    <configuration>
+        <date-format>dd/MM/yyyy HH:mm:ss</date-format>
+    </configuration>
+    
+    <mapping>
+        <class-a>co.com.javeriana.morganmarketservices.entities.Cliente</class-a>
+        <class-b>co.com.javeriana.morganmarketservices.dto.ClienteDTO</class-b>
+        <field>
+            <a>id</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>tipoId</a>
+            <b>tipoId</b>
+        </field>
+        <field>
+            <a>noIdentificacion</a>
+            <b>noIdentificacion</b>
+        </field>
+        <field>
+            <a>nombres</a>
+            <b>nombres</b>
+        </field>
+        <field>
+            <a>direccion</a>
+            <b>direccion</b>
+        </field>
+        <field>
+            <a>telefono</a>
+            <b>telefono</b>
+        </field>
+        <field>
+            <a>celular</a>
+            <b>celular</b>
+        </field>
+        <field>
+            <a>pais</a>
+            <b>pais</b>
+        </field>
+        <field>
+            <a>ciudad</a>
+            <b>ciudad</b>
+        </field>
+    </mapping>
+    
+    <mapping>
+        <class-a>co.com.javeriana.morganmarketservices.entities.CatalogoProveedorDTO</class-a>
+        <class-b>co.com.javeriana.morganmarketservices.dto.CatalogoProveedorDTO</class-b>
+        <field>
+            <a>id</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>descripcion</a>
+            <b>descripcion</b>
+        </field>
+        <field>
+            <a>precio</a>
+            <b>precio</b>
+        </field>
+        <field>
+            <a>idCatalogo</a>
+            <b>idCatalogo</b>
+        </field>
+        <field>
+            <a>idProveedor</a>
+            <b>idProveedor</b>
+        </field>
+        <field>
+            <a>idProveedorProducto</a>
+            <b>idProveedorProducto</b>
+        </field>
+        
+    </mapping>
+    
+    <mapping>
+        <class-a>co.com.javeriana.morganmarketservices.entities.Catalogo</class-a>
+        <class-b>co.com.javeriana.morganmarketservices.dto.CatalogoDTO</class-b>
+        <field>
+            <a>id</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>nombre</a>
+            <b>nombre</b>
+        </field>
+        <field>
+            <a>descripcion</a>
+            <b>descripcion</b>
+        </field>
+        <field>
+            <a>tipo</a>
+            <b>tipo</b>
+        </field>
+        <field>
+            <a>estado</a>
+            <b>estado</b>
+        </field>
+    </mapping>
+    
+    <mapping>
+        <class-a>co.com.javeriana.morganmarketservices.entities.DetalleSolicitud</class-a>
+        <class-b>co.com.javeriana.morganmarketservices.dto.DetalleSolicitudDTO</class-b>
+        <field>
+            <a>id</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>cantidad</a>
+            <b>cantidad</b>
+        </field>
+        <field>
+            <a>idCatalogo</a>
+            <b>idCatalogo</b>
+        </field>
+        
+    </mapping>
+    
+    
+    <mapping>
+        <class-a>co.com.javeriana.morganmarketservices.entities.Solicitud</class-a>
+        <class-b>co.com.javeriana.morganmarketservices.dto.SolicitudDTO</class-b>
+        <field>
+            <a>id</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>fecha</a>
+            <b>fecha</b>
+        </field>
+        <field>
+            <a>estado</a>
+            <b>estado</b>
+        </field>
+        <field>
+            <a>idCliente</a>
+            <b>idCliente</b>
+        </field>
+        <field>
+            <a>detalleSolicitudList</a>
+            <b>detalleSolicitudList</b>
+        </field>
+    </mapping>
+    
+    <mapping>
+        <class-a>co.com.javeriana.morganmarketservices.entities.DetalleCotizacion</class-a>
+        <class-b>co.com.javeriana.morganmarketservices.dto.DetalleCotizacionDTO</class-b>
+        <field>
+            <a>id</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>valorUnitario</a>
+            <b>valorUnitario</b>
+        </field>
+        <field>
+            <a>valorImpuestos</a>
+            <b>valorImpuestos</b>
+        </field>
+        <field>
+            <a>valorTotal</a>
+            <b>valorTotal</b>
+        </field>
+        <field>
+            <a>idCatalogoProv</a>
+            <b>idCatalogoProv</b>
+        </field>
+    </mapping>
+    <mapping>
+        <class-a>co.com.javeriana.morganmarketservices.entities.Cotizacion</class-a>
+        <class-b>co.com.javeriana.morganmarketservices.dto.CotizacionDTO</class-b>
+        <field>
+            <a>id</a>
+            <b>id</b>
+        </field>
+        <field>
+            <a>fecha</a>
+            <b>fecha</b>
+        </field>
+        <field>
+            <a>fechaEstimadaEntrega</a>
+            <b>fechaEstimadaEntrega</b>
+        </field>
+        <field>
+            <a>detalleCotizacionList</a>
+            <b>detalleCotizacionList</b>
+        </field>
+        <field>
+            <a>idProveedor</a>
+            <b>idProveedor</b>
+        </field>
+        <field>
+            <a>idSolicitud</a>
+            <b>idSolicitud</b>
+        </field>
+    </mapping>
+    
+    
+    
+</mappings>

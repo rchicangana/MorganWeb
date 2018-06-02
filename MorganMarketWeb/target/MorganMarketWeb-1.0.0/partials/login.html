@@ -1,0 +1,44 @@
+<div class="loginContainer">
+    <div class="loginLogo">
+        <div>
+            <div>
+                <img src="./images/logo.png" />
+            </div>
+        </div>
+    </div><!--
+    --><div class="loginForm">
+        <form ng-submit="login()">
+            <div class="inputNormal">
+                <h5><b>Tipo</b></h5>
+                <select id="tipo" name="tipo" 
+                       class="form-control" 
+                       ng-model="datosFormulario.tipo">
+                    <option value="C" selected="selected">Cliente</option>
+                    <option value="P" >Proveedor</option>
+                </select>
+            </div>
+            <div class="inputNormal">
+                <h5><b>Usuario</b></h5>
+                <input id="user" name="user" type="text"
+                       class="form-control" 
+                       placeholder="Usuario" 
+                       required 
+                       autofocus
+                       ng-model="datosFormulario.usuario">
+            </div>
+            <div class="inputNormal espacio-top">
+                <h5><b>Contraseña</b></h5>
+                <input id="password" 
+                       name="password" type="password" 
+                       class="form-control" 
+                       placeholder="Contraseña" 
+                       required
+                       ng-model="datosFormulario.password">
+            </div>
+            <hr>
+            <div class="inputNormal espacio-top">
+                <input type="submit" value="Ingresar" >
+            </div>
+        </form>
+    </div>
+</div>

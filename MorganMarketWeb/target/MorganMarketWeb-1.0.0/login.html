@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html  ng-app="mercadoMorganLogin">
+    <head>
+        <title>Morgan Market</title>
+        <meta charset="windows-1250">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Bootstrap -->
+        <link href="css/app.css" rel="stylesheet"/>
+        <link href="css/signin.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.css" rel="stylesheet"/>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        
+        <script src="lib/jquery-1.11.2.min.js"></script>
+        <!--[if lt IE 9]> 
+          <link href="kit/ie8.css" rel="stylesheet">
+          <script src="assets/js/css3-mediaqueries.js"></script>           
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        <div style="text-align: center; width: auto; margin-left: auto ;margin-right: auto ;">
+            <div class="ng-scope" ng-view=""></div>
+        </div>
+
+        <div class="modal fade espera-modal-sm in" id="dlgEspera" tabindex="-1" role="dialog" aria-labelledby="dlgConsulta" aria-hidden="false">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content"> 
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="./images/cargando.GIF" alt="cargando" />
+                            </div>
+                            <div class="col-sm-1">
+                            </div>
+                            <div class="col-sm-8">
+                                Por favor espere mientras consultamos la información.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade bs-example-modal-md in" id="dlgConsulta" tabindex="-1" role="dialog" aria-labelledby="dlgConsulta" aria-hidden="false">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="dlgConsulta">Mensaje:</h4>
+                    </div>
+                    <div class="modal-body">
+                        <span id="msgConsulta"> </span>  
+                        <hr />
+                        <div class="text-right">
+                            <button class="btn btn-primary" data-dismiss="modal" data-target=".bs-example-modal-md">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <script src="./lib/angular.min.js"></script>
+        <script src="./lib/angular-route.min.js"></script>
+        <script src="./lib/bootstrap.min.js"></script>
+        <script src="./js/app_login.js"></script> 
+        <script src="./js/controllers_login.js"></script>
+    </body>
+</html>

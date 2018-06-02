@@ -1,0 +1,232 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/01/2015, 02:49:35 PM
+    Author     : RicardoAlonso
+*/
+
+root, html, body { 
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: auto;
+    height: 100%;
+}
+
+.loginContainer {
+    position: relative;
+    box-sizing: border-box;
+    width: 600px;
+    height: 400px;
+    top: 25%;
+    margin: auto;
+    border: 1px solid #888888;
+    border-radius: 10px;
+}
+
+.loginContainer > div {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+.loginLogo {
+    box-sizing: border-box;
+    width: 65%;
+    padding: 10% 0;
+}
+
+.loginLogo > div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #BBBBBB;
+    padding: 0 16%;
+}
+
+.loginLogo > div > div {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.loginForm {
+    box-sizing: border-box;
+    width: 35%;
+    padding: 10% 2%;
+}
+
+.btn-parameterize {
+    color: #fff;
+    background-color: #F59912;
+    border-color: #F5C412 !important; 
+}
+
+.btn-works {
+    color: #fff;
+    background-color: #CA579C;
+    border-color: #CA8D9B !important; 
+}
+
+.btn-users {
+    color: #fff;
+    background-color: #169639;
+    border-color: #16A975 !important; 
+}
+
+#logInMsg {
+    position: relative;
+    top: 23%;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #d9534f;
+    border-radius: 5px;
+    background: #e48683;
+    color: #fdffd6;
+    text-align: center;
+    font-weight: bold;
+}
+
+.requisites {
+    z-index: 2000000 !important;
+}
+
+.loginContainer input[type="submit"] 
+{
+    background: #e03b37;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    width: 90%;
+    padding: 5px 35px;
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+}
+
+
+
+html {
+    height: 100%;
+}
+html body {
+    height: 100%;
+    overflow: scroll;
+    padding: 0px 5% !important;
+    margin-top: 60px !important;
+}
+
+.required{
+    background-color: #FAD6B6;
+}
+
+.col-md-6{
+    width: 50%;
+    float: left;
+}
+
+.error{
+    color: #EF0000;
+}
+
+.error input{
+    border: #EF0000 2px solid;
+}
+
+.error select{
+    border: #EF0000 2px solid;
+} 
+
+.row{
+    /* border-bottom: 1px solid #DDDDDD !important; */;
+}
+
+
+.img-responsive {
+    max-width: 200px;  
+    max-height: 80px; 
+    margin: 0 auto;
+}
+
+.division {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background: #FFFFFF;
+}
+
+.division div {
+    width: 70%;
+    height: 1px;
+    border-bottom: 1px solid #AAAAAA;
+    margin: 0 auto;    
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width:auto;
+    padding:0 10px;
+    border-bottom:none;
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+ .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand>img {
+  padding: 0px 0px;
+  height: 40px;
+}
+
+
+.texto_grande {
+    font-size: 2.5rem;
+    color: white;
+} 
+#icone_grande {
+    font-size: 8rem;
+    color:#fff;
+} 
+
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+input.currency {
+    text-align: right;
+    padding-right: 15px;
+}

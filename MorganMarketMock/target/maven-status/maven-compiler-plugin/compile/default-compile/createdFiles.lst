@@ -1,0 +1,4 @@
+co\com\javeriana\morganmarketmock\cron\TareaProegamadaCron.class
+org\netbeans\rest\application\config\ApplicationConfig.class
+co\com\javeriana\morganmarketmock\servicios\MockServicio.class
+co\com\javeriana\morganmarketmock\util\GsonMessageBodyHandler.class

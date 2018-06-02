@@ -1,0 +1,9 @@
+co\com\javeriana\morganmarketweb\filtros\FiltroAutenticacion.class
+co\com\javeriana\morganmarketweb\utils\GsonMessageBodyHandler.class
+co\com\javeriana\morganmarketweb\utils\ApplicationConfig.class
+co\com\javeriana\morganmarketweb\servicios\AutenticacionServicio.class
+co\com\javeriana\morganmarketweb\dto\LoginDTO.class
+co\com\javeriana\morganmarketweb\logica\AutenticarLogica.class
+co\com\javeriana\morganmarketweb\comun\ConstantesComunes.class
+co\com\javeriana\morganmarketweb\dto\LoginOutDTO.class
+co\com\javeriana\morganmarketweb\dto\MensajeDTO.class
